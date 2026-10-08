@@ -1,0 +1,14 @@
+# Local benchmark data and diagnostic output
+*.csv
+*.log
+*.trace
+
+# Downloaded speed-test tools and release archives
+*.exe
+*.zip
+*.tar.gz
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example

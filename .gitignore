@@ -1,0 +1,23 @@
+# Benchmark results, traces and diagnostic output
+*.csv
+*.log
+*.trace
+results/
+
+# Downloaded tools and archives
+*.exe
+*.zip
+*.tar.gz
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
