@@ -12,7 +12,7 @@
 
 首次使用请阅读 [cloudflare-ip-test 前置条件与教程](skills/cloudflare-ip-test/README.md)。
 
-纠错与规则转换共用目标项目根目录下的 `.agents/corrections/rules.md`，无需用户提供纠错文件位置。安装和调用见各技能目录的 README，审批流程与文件格式见各自的 `SKILL.md`。下面的网络工具前置条件和复测命令适用于 `cloudflare-ip-test`。
+纠错与规则转换可独立安装和调用，共用目标项目根目录下的 `.agents/corrections/rules.md`，无需用户提供纠错文件位置。安装和调用见各技能目录的 README，审批流程与文件格式见各自的 `SKILL.md`。下面的网络工具前置条件和复测命令适用于 `cloudflare-ip-test`。
 
 ## 前置条件
 
