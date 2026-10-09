@@ -9,10 +9,13 @@
 | [cloudflare-ip-test](skills/cloudflare-ip-test/SKILL.md) | 筛选 Cloudflare 边缘 IP、验证节点，并对每个候选进行至少 20 次 HTTPS 复测 | Windows、PowerShell 7、curl.exe；发现候选需要 CloudflareSpeedTest |
 | [agent-correction](skills/agent-correction/SKILL.md) | 理解纠错场景、检查规范，在对话提案获准后保存纠正规则 | 支持 skill 的 AI 助手及文件读写工具 |
 | [agent-rule-conversion](skills/agent-rule-conversion/SKILL.md) | 仅整理已有纠错文件，提炼并整合到项目规范，获准后生成简洁记录 | 支持 skill 的 AI 助手及文件读写工具 |
+| [ui-design](skills/ui-design/SKILL.md) | 将需求与数据契约整理为前端功能说明、交互规则和验收任务，按需补充 UI/UX 方案 | 支持 skill 的 AI 助手；能读取目标项目相关资料 |
 
 首次使用请阅读 [cloudflare-ip-test 前置条件与教程](skills/cloudflare-ip-test/README.md)。
 
 纠错与规则转换可独立安装和调用，共用目标项目根目录下的 `.agents/corrections/rules.md`，无需用户提供纠错文件位置。安装和调用见各技能目录的 README，审批流程与文件格式见各自的 `SKILL.md`。下面的网络工具前置条件和复测命令适用于 `cloudflare-ip-test`。
+
+使用 `ui-design` 时复制整个技能目录，保留内部资料的相对位置。输入与交付见 [使用说明](skills/ui-design/README.md)。调用示例：使用 ui-design，根据基本需求与后端契约整理前端功能说明及验收场景，明确字段联动和状态行为。
 
 ## 前置条件
 
@@ -34,6 +37,14 @@ skills/
 ├── agent-rule-conversion/
 │   ├── SKILL.md
 │   └── README.md
+├── ui-design/
+│   ├── SKILL.md
+│   ├── README.md
+│   ├── workflows/
+│   ├── methods/
+│   ├── design-system/
+│   ├── references/
+│   └── templates/
 └── cloudflare-ip-test/
     ├── SKILL.md
     ├── README.md
